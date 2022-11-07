@@ -634,7 +634,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8.366539
   m_Depth: -20
   m_CullingMask:
     serializedVersion: 2
@@ -730,6 +730,7 @@ GameObject:
   - component: {fileID: 1709331217}
   - component: {fileID: 1709331216}
   - component: {fileID: 1709331215}
+  - component: {fileID: 1709331221}
   m_Layer: 0
   m_Name: Hermes Vision
   m_TagString: Untagged
@@ -808,8 +809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 166
-    y: 114
+    x: 251
+    y: 115
     width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -820,6 +821,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1709331217}
   commandList:
   - {fileID: 1709331216}
+  - {fileID: 1709331221}
   - {fileID: 1709331215}
   suppressAllAutoSelections: 0
 --- !u!114 &1709331219
@@ -849,7 +851,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1709331218}
   selectedCommands:
-  - {fileID: 1709331215}
+  - {fileID: 1709331221}
   variables: []
   description: 
   stepPause: 0
@@ -876,6 +878,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709331221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709331214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  commenterName: UI
+  commentText: Need slider
 --- !u!1 &1790655035
 GameObject:
   m_ObjectHideFlags: 0
