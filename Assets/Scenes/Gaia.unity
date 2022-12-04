@@ -187,9 +187,6 @@ GameObject:
   - component: {fileID: 185867558}
   - component: {fileID: 185867557}
   - component: {fileID: 185867565}
-  - component: {fileID: 185867571}
-  - component: {fileID: 185867570}
-  - component: {fileID: 185867569}
   - component: {fileID: 185867572}
   - component: {fileID: 185867573}
   - component: {fileID: 185867574}
@@ -1667,68 +1664,6 @@ MonoBehaviour:
   targetAlpha:
     floatRef: {fileID: 0}
     floatVal: 1
---- !u!114 &185867569
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185867503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000864f8e9e1748a39807861d0e60e29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 185867571}
-  suppressBlockAutoSelect: 0
-  keyPressType: 0
-  keyCode: 27
---- !u!114 &185867570
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185867503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 60
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: MainMenu
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
---- !u!114 &185867571
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185867503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -45.74518
-    y: 123.835236
-    width: 111.53846
-    height: 40
-  tint: {r: 1, g: 0.4009434, b: 0.92674416, a: 1}
-  useCustomTint: 1
-  itemId: 61
-  blockName: Main Menu
-  description: 
-  eventHandler: {fileID: 185867569}
-  commandList:
-  - {fileID: 185867570}
-  suppressAllAutoSelections: 0
 --- !u!114 &185867572
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1986,7 +1921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702397387}
   - component: {fileID: 702397386}
-  - component: {fileID: 702397385}
+  - component: {fileID: 702397388}
   m_Layer: 0
   m_Name: Gaia Main Camera
   m_TagString: MainCamera
@@ -1994,14 +1929,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &702397385
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702397384}
-  m_Enabled: 1
 --- !u!20 &702397386
 Camera:
   m_ObjectHideFlags: 0
@@ -2060,6 +1987,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &702397388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702397384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &770900090
 GameObject:
   m_ObjectHideFlags: 0
