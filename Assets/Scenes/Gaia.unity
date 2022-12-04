@@ -186,10 +186,13 @@ GameObject:
   - component: {fileID: 185867559}
   - component: {fileID: 185867558}
   - component: {fileID: 185867557}
-  - component: {fileID: 185867568}
-  - component: {fileID: 185867567}
-  - component: {fileID: 185867566}
   - component: {fileID: 185867565}
+  - component: {fileID: 185867571}
+  - component: {fileID: 185867570}
+  - component: {fileID: 185867569}
+  - component: {fileID: 185867572}
+  - component: {fileID: 185867573}
+  - component: {fileID: 185867574}
   m_Layer: 0
   m_Name: Gaia Vision
   m_TagString: Untagged
@@ -213,7 +216,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 363
     y: 121
-    width: 113
+    width: 114.94845
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -251,10 +254,8 @@ MonoBehaviour:
   - {fileID: 185867508}
   - {fileID: 185867514}
   - {fileID: 185867513}
-  - {fileID: 185867568}
-  - {fileID: 185867567}
-  - {fileID: 185867566}
   - {fileID: 185867565}
+  - {fileID: 185867574}
   - {fileID: 185867550}
   suppressAllAutoSelections: 0
 --- !u!114 &185867505
@@ -270,19 +271,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 579.47595, y: -54.835236}
+  scrollPos: {x: 348.05228, y: -11.544181}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 868
-  zoom: 1
+  blockViewHeight: 1083
+  zoom: 0.97
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 185867504}
+  selectedCommands:
+  - {fileID: 185867574}
   variables: []
   description: 
   stepPause: 0
@@ -1182,18 +1185,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 129.89827
-    y: 115.66809
-    width: 111
+    x: 179.89827
+    y: 119.66809
+    width: 112.8866
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 33
-  blockName: New Block
+  blockName: Hide Panel
   description: 
   eventHandler: {fileID: 185867540}
   commandList:
   - {fileID: 185867539}
+  - {fileID: 185867573}
   suppressAllAutoSelections: 0
 --- !u!114 &185867542
 MonoBehaviour:
@@ -1226,7 +1230,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 441.89825
     y: 342.6681
-    width: 101
+    width: 102.57732
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1267,9 +1271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 297.8529
+    x: 296.8529
     y: 340.53177
-    width: 106
+    width: 107.73196
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1312,7 +1316,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 567.3984
     y: 242.03172
-    width: 76
+    width: 76.80412
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1355,7 +1359,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 180.89825
     y: 241.66809
-    width: 114
+    width: 115.97938
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1387,7 +1391,7 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 
   startIndex: 0
-  callMode: 0
+  callMode: 1
 --- !u!114 &185867554
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1429,16 +1433,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 347.89825
+    x: 351.89825
     y: 240.66809
-    width: 144
+    width: 146.90721
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 37
   blockName: Judgment Phase
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 185867572}
   commandList:
   - {fileID: 185867554}
   suppressAllAutoSelections: 0
@@ -1664,7 +1668,7 @@ MonoBehaviour:
   targetAlpha:
     floatRef: {fileID: 0}
     floatVal: 1
---- !u!114 &185867566
+--- !u!114 &185867569
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1673,25 +1677,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 185867503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 000864f8e9e1748a39807861d0e60e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 57
-  indentLevel: 0
-  storyText: 'A judgment will be rendered against the player based on various thresholds. '
-  description: 
-  character: {fileID: 450040264}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &185867567
+  parentBlock: {fileID: 185867571}
+  suppressBlockAutoSelect: 0
+  keyPressType: 0
+  keyCode: 27
+--- !u!114 &185867570
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1700,27 +1693,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 185867503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 56
+  itemId: 60
   indentLevel: 0
-  storyText: "The final count of your collections, creations, kills, and conquests
-    will be displayed in the \u201CJudgment\u201D phase.  Needs, Desires, and Friendship
-    meters will also appear."
-  description: 
-  character: {fileID: 450040264}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &185867568
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: MainMenu
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &185867571
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1729,24 +1712,85 @@ MonoBehaviour:
   m_GameObject: {fileID: 185867503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 55
-  indentLevel: 0
-  storyText: 'PHASE 4: Judgement'
+  nodeRect:
+    serializedVersion: 2
+    x: -45.74518
+    y: 123.835236
+    width: 114.94845
+    height: 40
+  tint: {r: 1, g: 0.4009434, b: 0.92674416, a: 1}
+  useCustomTint: 1
+  itemId: 61
+  blockName: Main Menu
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  eventHandler: {fileID: 185867569}
+  commandList:
+  - {fileID: 185867570}
+  suppressAllAutoSelections: 0
+--- !u!114 &185867572
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185867503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 185867556}
+  suppressBlockAutoSelect: 0
+  message: Judgment
+--- !u!114 &185867573
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185867503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab0d0ed4a2ca94c81a230a0ecce6e6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 62
+  indentLevel: 0
+  targetObjects:
+  - {fileID: 792175469}
+  - {fileID: 1601119396}
+  - {fileID: 988018929}
+  - {fileID: 2018290857}
+  - {fileID: 770900090}
+  interactableState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &185867574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185867503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab0d0ed4a2ca94c81a230a0ecce6e6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 63
+  indentLevel: 0
+  targetObjects:
+  - {fileID: 792175469}
+  - {fileID: 1601119396}
+  - {fileID: 988018929}
+  - {fileID: 2018290857}
+  - {fileID: 770900090}
+  interactableState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
 --- !u!1 &254200255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2434,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988018929}
   m_CullTransparentMesh: 1
+--- !u!1 &1097560401
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097560403}
+  - component: {fileID: 1097560402}
+  m_Layer: 0
+  m_Name: _FungusState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1097560402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097560401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 185867505}
+--- !u!4 &1097560403
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097560401}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1113317794
 GameObject:
   m_ObjectHideFlags: 0
