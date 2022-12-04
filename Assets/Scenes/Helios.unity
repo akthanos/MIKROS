@@ -340,9 +340,6 @@ GameObject:
   - component: {fileID: 1175398082}
   - component: {fileID: 1175398103}
   - component: {fileID: 1175398104}
-  - component: {fileID: 1175398107}
-  - component: {fileID: 1175398106}
-  - component: {fileID: 1175398105}
   m_Layer: 0
   m_Name: Helios Part I
   m_TagString: Untagged
@@ -899,8 +896,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1175398107}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -967,68 +963,6 @@ MonoBehaviour:
     stringVal: Hermes
   loadingImage: {fileID: 0}
   sceneNameOLD: 
---- !u!114 &1175398105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175398081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000864f8e9e1748a39807861d0e60e29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1175398107}
-  suppressBlockAutoSelect: 0
-  keyPressType: 0
-  keyCode: 27
---- !u!114 &1175398106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175398081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 21
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: MainMenu
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
---- !u!114 &1175398107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175398081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 161.08215
-    y: 92.73152
-    width: 154
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 37
-  blockName: Main Menu (Copy)
-  description: 
-  eventHandler: {fileID: 1175398105}
-  commandList:
-  - {fileID: 1175398106}
-  suppressAllAutoSelections: 0
 --- !u!1 &2047762653
 GameObject:
   m_ObjectHideFlags: 0
