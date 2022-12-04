@@ -214,9 +214,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 363
-    y: 121
-    width: 114.94845
+    x: 369.18552
+    y: 122.03093
+    width: 111.53846
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -232,10 +232,10 @@ MonoBehaviour:
   - {fileID: 185867512}
   - {fileID: 185867529}
   - {fileID: 185867528}
+  - {fileID: 185867535}
   - {fileID: 185867533}
   - {fileID: 185867527}
   - {fileID: 185867534}
-  - {fileID: 185867535}
   - {fileID: 185867510}
   - {fileID: 185867511}
   - {fileID: 185867526}
@@ -271,21 +271,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 348.05228, y: -11.544181}
+  scrollPos: {x: 518.2906, y: -35.94223}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 1083
-  zoom: 0.97
+  blockViewHeight: 942
+  zoom: 0.91
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 185867504}
-  selectedCommands:
-  - {fileID: 185867574}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -342,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
-  storyText: 'PHASE 4: Judgement'
+  storyText: 'PHASE 4: Judgment'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -593,7 +591,8 @@ MonoBehaviour:
   itemId: 16
   indentLevel: 0
   storyText: The player will eventually discover that they could have gone through
-    the entire game peacefully (hostile NPCs would not be held against the player).
+    the entire game peacefully (interactions with instigating hostile NPCs would
+    not be held against the player).
   description: 
   character: {fileID: 450040264}
   portrait: {fileID: 0}
@@ -875,7 +874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: Belongings will get progressively more advanced, so the judgement will
+  storyText: Belongings will get progressively more advanced, so the judgment will
     consider not only how much you took but how much damage you inflicted on the
     environment to do so.
   description: 
@@ -1187,7 +1186,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 179.89827
     y: 119.66809
-    width: 112.8866
+    width: 109.34065
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1230,7 +1229,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 441.89825
     y: 342.6681
-    width: 102.57732
+    width: 99.45055
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1273,7 +1272,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 296.8529
     y: 340.53177
-    width: 107.73196
+    width: 103.84615
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1316,7 +1315,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 567.3984
     y: 242.03172
-    width: 76.80412
+    width: 75.27473
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1359,7 +1358,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 180.89825
     y: 241.66809
-    width: 115.97938
+    width: 112.63736
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1435,7 +1434,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 351.89825
     y: 240.66809
-    width: 146.90721
+    width: 140.1099
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1719,7 +1718,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -45.74518
     y: 123.835236
-    width: 114.94845
+    width: 111.53846
     height: 40
   tint: {r: 1, g: 0.4009434, b: 0.92674416, a: 1}
   useCustomTint: 1
@@ -1770,7 +1769,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &185867574
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
