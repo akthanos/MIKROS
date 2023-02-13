@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{df1fe50e-82c9-4e29-9aaf-b68341c9c887}">
+		<property name="name">
+			<value>hDelirium</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d9488a57-eb31-4e39-a3b9-0427f8a83695}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{993a6f8b-b46f-4053-b3c8-287b851fcf19}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{993a6f8b-b46f-4053-b3c8-287b851fcf19}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>11</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
