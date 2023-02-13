@@ -16,7 +16,7 @@ public class FMODManager : MonoBehaviour {
 		public bool playing;
 
 		[Range(0, 100)] public float hHealth;
-		[Range(0, 1)] public float hTimeOfDay;
+		[Range(0, 1)] public float hTOD;
 		[Range(0, 10)] public float hDelirium;
 
 		public void StartPlaying()
@@ -59,7 +59,7 @@ public class FMODManager : MonoBehaviour {
 				hHealth = _newValue;
 
 			} else if (_parameterName == "Layer2Vol") {
-				hTimeOfDay = _newValue;
+				hTOD = _newValue;
 
 			} else if (_parameterName == "Layer3Vol") {
 				hDelirium = _newValue;
@@ -113,14 +113,14 @@ public class FMODManager : MonoBehaviour {
 	}
 
 	public void LoadEvent(string _eventName, bool _isPlaying, float _intensity,
-		float _layer1Vol, float _layer2Vol, float _layer3Vol)
+		float _hHealth, float _hTOD, float _hDelirium)
 	{
 		Event _newEvent = new Event { };
 
 		_newEvent.eventReference = RuntimeManager.PathToEventReference(_eventName);
-		_newEvent.UpdateParam("Layer1Vol", _layer1Vol);
-		_newEvent.UpdateParam("Layer2Vol", _layer2Vol);
-		_newEvent.UpdateParam("Layer3Vol", _layer3Vol);
+		_newEvent.UpdateParam("HermesHealth", _hHealth);
+		_newEvent.UpdateParam("HermesTimeOfDay", _hTOD);
+		_newEvent.UpdateParam("HermesDelirium", _hDelirium);
 		_newEvent.UpdateParam("Intensity", _intensity);
 
 		events.Add(_newEvent);

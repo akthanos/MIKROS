@@ -13,9 +13,9 @@ namespace Fungus {
 		[SerializeField]
 		public enum Parameter {
 			None,
-			Layer1Vol,
-			Layer2Vol,
-			Layer3Vol,
+			hHealth,
+			hTOD,
+			hDelirium,
 			Intensity
 		}
 
