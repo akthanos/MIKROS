@@ -15,10 +15,9 @@ public class FMODManager : MonoBehaviour {
 
 		public bool playing;
 
-		[Range(0, 1)] public float Layer1Vol;
-		[Range(0, 1)] public float Layer2Vol;
-		[Range(0, 1)] public float Layer3Vol;
-		[Range(0, 10)] public float Intensity;
+		[Range(0, 100)] public float hHealth;
+		[Range(0, 1)] public float hTimeOfDay;
+		[Range(0, 10)] public float hDelirium;
 
 		public void StartPlaying()
 		{
@@ -56,17 +55,14 @@ public class FMODManager : MonoBehaviour {
 			if (FMODManager.INSTANCE.debugMode) { Debug.Log("UpdateParam " + _parameterName + " for event " + eventName); }
 			RuntimeManager.StudioSystem.setParameterByName(_parameterName, _newValue);
 
-			if (_parameterName == "Layer1Vol") {
-				Layer1Vol = _newValue;
+			if (_parameterName == "hHealth") {
+				hHealth = _newValue;
 
 			} else if (_parameterName == "Layer2Vol") {
-				Layer2Vol = _newValue;
+				hTimeOfDay = _newValue;
 
 			} else if (_parameterName == "Layer3Vol") {
-				Layer3Vol = _newValue;
-
-			} else if (_parameterName == "Intensity") {
-				Intensity = _newValue; ;
+				hDelirium = _newValue;
 
 			} else { Debug.LogError("FMODManager UpdateParam This should never happen"); }
 		}
