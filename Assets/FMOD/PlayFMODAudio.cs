@@ -41,7 +41,7 @@ namespace Fungus {
 			Continue();
 		}
 
-		public override Color GetButtonColor() { return new Color32(255, 87, 51, 255); }
+		public override Color GetButtonColor() { return new Color32(24, 71, 54, 255); }
 
 		public override string GetSummary() {
 			string _summary = "Error: Event is null!";

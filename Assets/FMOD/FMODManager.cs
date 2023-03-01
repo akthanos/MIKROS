@@ -85,6 +85,7 @@ public class FMODManager : MonoBehaviour {
 		RuntimeManager.PlayOneShot(_eventReference);
 	}
 
+	// I don't know why but 'string _eventName' is giving a syntax error
 	public Event GetEvent(EventReference _eventReference, string _eventName = "")
 	{
 		bool _alreadyInList = false;
@@ -121,7 +122,6 @@ public class FMODManager : MonoBehaviour {
 		_newEvent.UpdateParam("HermesHealth", _hHealth);
 		_newEvent.UpdateParam("HermesTimeOfDay", _hTOD);
 		_newEvent.UpdateParam("HermesDelirium", _hDelirium);
-		_newEvent.UpdateParam("Intensity", _intensity);
 
 		events.Add(_newEvent);
 

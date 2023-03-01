@@ -16,7 +16,6 @@ namespace Fungus {
 			hHealth,
 			hTOD,
 			hDelirium,
-			Intensity
 		}
 
 		public EventReference eventReference;
@@ -37,7 +36,7 @@ namespace Fungus {
 			Continue();
 		}
 
-		public override Color GetButtonColor() { return new Color32(255, 87, 51, 255); }
+		public override Color GetButtonColor() { return new Color32(24, 71, 54, 255); }
 
 		public override string GetSummary() {
 			string _summary = "Error: Event is null!";
@@ -48,9 +47,6 @@ namespace Fungus {
 				if (parameter != Parameter.None) {
 					_summary = eventReference.Path + ": " + parameter.ToString() + " > " + value;
 
-					if (parameter != Parameter.Intensity && (value > 1 || value < 0)) {
-						_summary = "Error: layer volume out of range: must be between 0 and 1!";
-					}
 				}
 			}
 
