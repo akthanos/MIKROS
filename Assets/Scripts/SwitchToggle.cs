@@ -14,6 +14,8 @@ public class SwitchToggle : MonoBehaviour
 
     Toggle toggle;
 
+    bool night;
+
     Vector2 handlePosition;
 
     void Awake()
@@ -32,6 +34,11 @@ public class SwitchToggle : MonoBehaviour
 
         if (toggle.isOn)
             OnSwitch(true);
+    }
+    public void ChangeText()
+    {
+        GetComponent<Text>().text = night ? "Night" : "Day";
+        night = !night;
     }
 
     void OnSwitch (bool on)
@@ -53,6 +60,7 @@ public class SwitchToggle : MonoBehaviour
         //    uiHandleRectTransform.anchoredPosition = handlePosition;
 
     }
+
 
    void OnDestroy()
     {
