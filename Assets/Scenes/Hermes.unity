@@ -3420,7 +3420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 930846889}
+  selectedFlowchart: {fileID: 1709331219}
 --- !u!4 &1493253677
 Transform:
   m_ObjectHideFlags: 1
@@ -4085,6 +4085,7 @@ GameObject:
   - component: {fileID: 1709331300}
   - component: {fileID: 1709331302}
   - component: {fileID: 1709331303}
+  - component: {fileID: 1709331304}
   m_Layer: 0
   m_Name: Hermes Vision
   m_TagString: Untagged
@@ -4156,6 +4157,7 @@ MonoBehaviour:
   - {fileID: 1709331216}
   - {fileID: 1709331298}
   - {fileID: 1709331255}
+  - {fileID: 1709331304}
   - {fileID: 1709331260}
   - {fileID: 1709331259}
   - {fileID: 1709331257}
@@ -4186,8 +4188,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1709331218}
+  selectedCommands:
+  - {fileID: 1709331304}
   variables: []
   description: 
   stepPause: 0
@@ -5449,6 +5453,28 @@ MonoBehaviour:
   value:
     booleanRef: {fileID: 0}
     booleanVal: 1
+--- !u!114 &1709331304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709331214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2d14b7d2531eb4e9705cb262b46838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 105
+  indentLevel: 0
+  eventReference:
+    Guid:
+      Data1: 408901600
+      Data2: 1331232715
+      Data3: -173184322
+      Data4: 1161702712
+    Path: event:/Hermes
+  action: 0
 --- !u!1 &1747908969
 GameObject:
   m_ObjectHideFlags: 0
