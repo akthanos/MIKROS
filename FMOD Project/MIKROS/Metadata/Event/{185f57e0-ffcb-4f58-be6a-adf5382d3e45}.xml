@@ -5,7 +5,7 @@
 			<value>Hermes</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{40f95c6a-21e0-4723-a73f-e8ce1bc8bbb9}</destination>
@@ -64,11 +64,18 @@
 	<object class="EventAutomatableProperties" id="{3fd622f2-4b80-4667-803e-007e689280b8}" />
 	<object class="MarkerTrack" id="{0684a070-1eb7-456d-bbdb-909c2499f5fe}" />
 	<object class="GroupTrack" id="{e9b754b3-cf9c-41c6-9257-8901e6e1e277}">
+		<relationship name="modules">
+			<destination>{d602794c-6c89-4fa1-96f4-fac3b50cbf52}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{36e4e9dd-a2cc-442a-b969-9afe67cc8f37}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{02176122-d0ba-4188-90dd-37687cf82756}" />
+	<object class="Timeline" id="{02176122-d0ba-4188-90dd-37687cf82756}">
+		<relationship name="modules">
+			<destination>{d602794c-6c89-4fa1-96f4-fac3b50cbf52}</destination>
+		</relationship>
+	</object>
 	<object class="ParameterProxy" id="{c7e42a6e-179b-46e0-a10f-385616d579f5}">
 		<relationship name="preset">
 			<destination>{9308f2ec-4b2d-488b-aa4a-90cfe72da392}</destination>
@@ -101,6 +108,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4c7cd881-e191-40de-bc71-d26cfb9af645}" />
+	<object class="SingleSound" id="{d602794c-6c89-4fa1-96f4-fac3b50cbf52}">
+		<property name="length">
+			<value>123.3384126984127</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{9bdb0322-36d3-4bb1-9476-c30dbbd155eb}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{36e4e9dd-a2cc-442a-b969-9afe67cc8f37}">
 		<property name="name">
 			<value>Audio 1</value>
