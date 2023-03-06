@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System;
 
 public class SwitchToggle : MonoBehaviour
 {
@@ -14,9 +15,9 @@ public class SwitchToggle : MonoBehaviour
 
     Toggle toggle;
 
-    bool night;
-
     Vector2 handlePosition;
+
+    public String parameterName;
 
     void Awake()
     {
@@ -35,13 +36,7 @@ public class SwitchToggle : MonoBehaviour
         if (toggle.isOn)
             OnSwitch(true);
     }
-    public void ChangeText()
-    {
-        GetComponent<Text>().text = night ? "Night" : "Day";
-        night = !night;
-    }
-
-    void OnSwitch (bool on)
+    public void OnSwitch(bool on)
     {
         uiHandleRectTransform.DOAnchorPos(on ? handlePosition * -1 : handlePosition, .4f).SetEase(Ease.InOutBack);
 
@@ -49,18 +44,15 @@ public class SwitchToggle : MonoBehaviour
 
         handleImage.DOColor(on ? handleActiveColor : handleDefaultColor, .6f);
 
-        //backgroundImage.color = on ? backgroundActiveColor : backgroundDefaultColor;
-
-        //handleImage.color = on ? handleActiveColor : handleDefaultColor;
-
-        //if (on)
-        //    uiHandleRectTransform.anchoredPosition = handlePosition * -1;
-
-        //else
-        //    uiHandleRectTransform.anchoredPosition = handlePosition;
-
+        if (on)
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName(parameterName, 1.0f);
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName(parameterName, 0f);
+        }
     }
-
 
    void OnDestroy()
     {

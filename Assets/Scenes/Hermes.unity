@@ -1584,6 +1584,7 @@ GameObject:
   - component: {fileID: 985080165}
   - component: {fileID: 985080164}
   - component: {fileID: 985080166}
+  - component: {fileID: 985080167}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1662,6 +1663,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
+--- !u!114 &985080167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985080162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c666635d06b9c14bba72b1affec7b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - eventName: Hermes
+    eventReference:
+      Guid:
+        Data1: 408901600
+        Data2: 1331232715
+        Data3: -173184322
+        Data4: 1161702712
+      Path: event:/Hermes
+    playing: 1
+    hHealth: 0
+    hTOD: 0
+    hDelirium: 0
+  debugMode: 0
 --- !u!1 &1083719945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,7 +2697,7 @@ GameObject:
   - component: {fileID: 1553722763}
   - component: {fileID: 1553722762}
   m_Layer: 0
-  m_Name: Character - Exposition
+  m_Name: Her - Exposition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3095,6 +3122,7 @@ GameObject:
   - component: {fileID: 1709331302}
   - component: {fileID: 1709331303}
   - component: {fileID: 1709331304}
+  - component: {fileID: 1709331305}
   m_Layer: 0
   m_Name: Hermes Vision
   m_TagString: Untagged
@@ -3153,7 +3181,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -177.10545
-    y: -166.3858
+    y: -170.3858
     width: 158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3186,7 +3214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1016.4993, y: 392.15848}
+  scrollPos: {x: 1062.9384, y: 272.72122}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 767
@@ -3198,9 +3226,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1709331218}
-  selectedCommands:
-  - {fileID: 1709331304}
+  - {fileID: 1709331262}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3393,7 +3420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -213.16812
+    x: -211.16812
     y: -90.65854
     width: 226
     height: 40
@@ -3414,6 +3441,7 @@ MonoBehaviour:
   - {fileID: 1709331266}
   - {fileID: 1709331284}
   - {fileID: 1709331265}
+  - {fileID: 1709331305}
   - {fileID: 1709331264}
   - {fileID: 1709331263}
   - {fileID: 1709331291}
@@ -4433,7 +4461,7 @@ MonoBehaviour:
     booleanVal: 1
 --- !u!114 &1709331304
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4453,6 +4481,36 @@ MonoBehaviour:
       Data4: 1161702712
     Path: event:/Hermes
   action: 1
+--- !u!114 &1709331305
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709331214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 106
+  indentLevel: 0
+  targetObjects:
+  - {fileID: 960989917}
+  tweenType: 1
+  waitUntilFinished:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.5
+  fadeMode: 0
+  targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  targetAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
 --- !u!1 &1747908969
 GameObject:
   m_ObjectHideFlags: 0
@@ -4775,7 +4833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.50004, y: 0.44141}
   m_SizeDelta: {x: 1, y: 0.8828125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1790655040
@@ -5131,6 +5189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1939973678}
   - component: {fileID: 1939973679}
+  - component: {fileID: 1939973680}
   m_Layer: 5
   m_Name: Health Slider
   m_TagString: Untagged
@@ -5211,7 +5270,32 @@ MonoBehaviour:
   m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1939973680}
+        m_TargetAssemblyTypeName: SliderBehavior, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1939973680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939973677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0596bc016eb81324aa89f9773604451f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameterName: hHealth
 --- !u!1 &1980082930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5299,7 +5383,7 @@ GameObject:
   - component: {fileID: 2021165118}
   - component: {fileID: 2021165117}
   m_Layer: 0
-  m_Name: Character - Game Mechanics
+  m_Name: Her - Game Mechanics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5437,7 +5521,19 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2054926094}
+        m_TargetAssemblyTypeName: SwitchToggle, Assembly-CSharp
+        m_MethodName: OnSwitch
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &2054926094
 MonoBehaviour:
@@ -5454,6 +5550,7 @@ MonoBehaviour:
   uiHandleRectTransform: {fileID: 2138915656}
   backgroundActiveColor: {r: 0.79215693, g: 0.2784314, b: 0, a: 1}
   handleActiveColor: {r: 1, g: 0.61960787, b: 0.26666668, a: 1}
+  parameterName: hTOD
 --- !u!1 &2098886685
 GameObject:
   m_ObjectHideFlags: 0
