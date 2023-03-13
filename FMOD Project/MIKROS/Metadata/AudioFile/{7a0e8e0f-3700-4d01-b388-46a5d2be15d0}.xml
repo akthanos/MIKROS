@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7a0e8e0f-3700-4d01-b388-46a5d2be15d0}">
+		<property name="assetPath">
+			<value>MIKROS_Zeus.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>136.70922902494331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{377f23fc-7321-4bad-921d-a8bbd2b22715}</destination>
+		</relationship>
+	</object>
+</objects>
